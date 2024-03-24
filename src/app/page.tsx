@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-9 bg-[#DDD0C8]">
       <aside className="col-span-1 px-4 py-4 h-[20vh]">
-        <Image width={120} height={120} alt="Charlotteville" src="/images/image 2.png" />
+        <Image width={120} height={120} alt="Charlotteville" src="/images/image 2.png" priority />
       </aside>
       <main className="col-span-8">
         <span>
