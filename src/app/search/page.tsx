@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { Map, AdvancedMarker, Pin } from '@vis.gl/react-google-maps'
+import Link from 'next/link'
 
 export default function Search() {
   const cords = { lat: 38.0831, lng: -78.4344 }
@@ -8,7 +9,9 @@ export default function Search() {
   return (
     <div className="grid grid-cols-9 h-screen bg-[#DDD0C8]">
       <aside className="col-span-1 px-4 py-4">
+        <Link href={'/'}>
         <Image width={100} height={100} className="" alt="Charlotteville" src="/images/image 4.png" />
+        </Link>
       </aside>
 
       <div className="col-span-8">
