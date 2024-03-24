@@ -5,8 +5,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
-  const cords = { lat: 38.0831, lng: -78.4344 }
-
   return (
     <div className="grid grid-cols-9 bg-[#DDD0C8]">
       <aside className="col-span-1 px-4 py-4 h-[20vh]">
@@ -39,40 +37,8 @@ export default function Home() {
           >
             Search
           </Link>
-          {/* <button className="p-2 bg-black text-white right-0 bottom-0 border-r-transparent font-gorwun-batang hover:bg-white hover:text-black">
-            <a href="">Search</a>
-          </button> */}
-        </div>
-
-        <div>
-          {/*   <Image width={1500} height={1200} alt='Charlottesville' src='/Images/longPhoto.jpg' /> */}
-
-          {/* <img  alt='Charlottesville' src='/Images/longPhoto.jpg' className='h-full w-full '/>
-        <button className='p-2 bg-black text-white absolute border-r-transparent font-gorwun-batang hover:bg-white hover:text-black'>
-          <a href="">Search</a>
-        </button> */}
         </div>
       </main>
     </div>
-  )
-
-  return (
-    <main className="">
-      <div className="w-full">
-        <div>
-          <Image width={120} height={120} alt="Charlotteville" src="/Images/image 2.png" />
-        </div>
-        <div>
-          <header>
-            <h1 className="text-7xl font-gorwun-batang">
-              Find Historic Sites in <br></br> Charlottesville
-            </h1>
-          </header>
-        </div>
-      </div>
-      <span className="mainImage w-full">
-        <Image width={975} height={1080} alt="Charlottesville" src="/Images/downtownMall.jpg" />
-      </span>
-    </main>
   )
 }
